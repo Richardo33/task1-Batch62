@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styling/style3.css" />
-    <title>Task 3</title>
+    <link rel="stylesheet" href="styling/nav.css" />
+    <title>Personal Web</title>
   </head>
   <body>
     <nav>
@@ -12,22 +13,25 @@
       <div class="left">
         <img src="assets/monster.webp" alt="Logo" class="logo" />
         <div class="menu">
-          <a href="task1.html">Home</a>
-          <a href="#">My Project</a>
+          <a href="task2.html">Home</a>
+          <a href="task4.html">My Project</a>
         </div>
       </div>
 
       <!-- Bagian kanan -->
       <div class="right">
-        <button class="btn">Contact Me</button>
+        <a href="#">
+          <button class="btn">Contact Me</button>
+        </a>
       </div>
     </nav>
+
     <div class="canvas">
       <div class="form">
         <h2>GET IN TOUCH</h2>
 
         <!-- Bagian form -->
-        <form action="submit">
+        <form action="">
           <label for="name">Name</label><br />
           <input type="text" id="name" />
 
@@ -47,7 +51,7 @@
           <br />
 
           <label for="message">Your Message</label><br />
-          <input type="message" id="message" />
+          <textarea id="message" name="message" rows="4"></textarea>
 
           <input type="submit" value="Submit" />
         </form>
