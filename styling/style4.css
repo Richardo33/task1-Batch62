@@ -51,14 +51,14 @@ input[type="file"] {
 .checkbox-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 30px; /* vertical gap: 10px, horizontal gap: 30px */
+  gap: 10px 30px;
   margin-top: 10px;
   margin-bottom: 15px;
-  max-width: 400px; /* bisa disesuaikan dengan form kamu */
+  max-width: 400px;
 }
 
 .checkbox-group label {
-  width: calc(50% - 15px); /* 2 kolom */
+  width: calc(50% - 15px);
   display: flex;
   align-items: center;
   font-weight: normal;
@@ -81,26 +81,9 @@ input[type="file"] {
   display: block;
 }
 
-input[type="submit"] {
-  width: 100%;
-  padding: 12px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-  background-color: white;
-  color: black;
-}
-
 textarea {
   height: 100px;
-  resize: vertical;
+  /* resize: vertical; */
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -113,13 +96,13 @@ textarea {
 
 .submit-container {
   display: flex;
-  justify-content: flex-end; /* Posisi tombol di kanan */
+  justify-content: flex-end;
   margin-top: 20px;
 }
 
 input[type="submit"] {
-  width: auto; /* Supaya tidak memenuhi lebar penuh */
-  padding: 10px 50px; /* Ukuran tombol lebih kecil */
+  width: auto;
+  padding: 10px 50px;
   background-color: black;
   color: white;
   border: none;
@@ -127,6 +110,11 @@ input[type="submit"] {
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: black;
 }
 
 .preview {
@@ -146,43 +134,60 @@ h2 {
 .listProject {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-start;
-  padding: 20px 0;
+  gap: 80px;
+  padding: 0 60px 0;
+  box-sizing: border-box;
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  /* background-color: aqua; */
+  /* margin: 0 20px 0; */
 }
 
 .card {
-  width: 300px;
-  margin: 3em auto 2em;
+  display: flex;
+  width: 400px;
+  margin: 3em 0 2em;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   background-color: white;
   font-family: Arial, sans-serif;
+  flex-direction: column;
+  /* min-height: 500px; */
+  /* background-color: aqua; */
 }
 
-@media (max-width: 640px) {
-  .card {
-    width: 100%;
-  }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-image {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #f2f2f2;
   display: block;
+  border-radius: 8px;
 }
 
 .card-content {
   padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 250px;
 }
 
 .card-title {
   font-size: 18px;
   font-weight: bold;
   margin: 0 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-time {
@@ -195,4 +200,61 @@ h2 {
   font-size: 14px;
   color: #333;
   line-height: 1.5;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.card-bottom {
+  margin-top: auto;
+}
+
+.card-tech {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-tech img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  /* border-radius: 20px; */
+}
+
+/* Tombol container */
+.card-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Tombol edit dan delete */
+.card-actions .edit-btn,
+.card-actions .delete-btn {
+  flex: 1; /* agar sama besar */
+  padding: 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Warna tombol edit */
+.card-actions .edit-btn {
+  background-color: black;
+  color: white;
+}
+
+/* Warna tombol delete */
+.card-actions .delete-btn {
+  background-color: black;
+  color: white;
 }

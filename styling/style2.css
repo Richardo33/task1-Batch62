@@ -57,10 +57,9 @@
   max-width: 120px;
   height: 40px;
   cursor: pointer;
-  border-radius: 50%;
   width: 40px;
-  object-fit: cover; /* agar gambar tetap proporsional dan penuh */
-  border-radius: 50%;
+  object-fit: cover;
+  /* border-radius: 50%; */
 }
 
 .container .rightSide {
@@ -87,7 +86,7 @@
   .container {
     flex-direction: column;
   }
-  /* Gambar tetap mengecil dan tidak lebih kecil lagi dari batas */
+
   .kartu img {
     max-width: 100%;
   }

@@ -11,7 +11,7 @@
     <nav>
       <!-- Bagian kiri -->
       <div class="left">
-        <img src="assets/monster.webp" alt="Logo" class="logo" />
+        <img src="assets/icon/monster.webp" alt="Logo" class="logo" />
         <div class="menu">
           <a href="task2.html">Home</a>
           <a href="#">My Project</a>
@@ -30,18 +30,18 @@
         <h2>ADD MY PROJECT</h2>
 
         <!-- Bagian form -->
-        <form action="">
+        <form id="myForm" action="" autocomplete="off">
           <label for="project">Project Name</label><br />
-          <input type="text" id="project" />
+          <input type="text" id="project" required />
 
           <div class="date-container">
             <div class="date-field">
               <label for="startDate">Start Date</label><br />
-              <input type="date" id="startDate" />
+              <input type="date" id="startDate" required />
             </div>
             <div class="date-field">
               <label for="endDate">End Date</label><br />
-              <input type="date" id="endDate" />
+              <input type="date" id="endDate" required />
             </div>
           </div>
 
@@ -50,22 +50,27 @@
 
           <label for="tech">Technologies</label>
           <div class="checkbox-group">
-            <label
-              ><input type="checkbox" name="tech" value="nodeJS" /> Node
-              JS</label
-            >
-            <label
-              ><input type="checkbox" name="tech" value="nextJS" /> Next
-              JS</label
-            >
-            <label
-              ><input type="checkbox" name="tech" value="reactJS" /> React
-              JS</label
-            >
-            <label
-              ><input type="checkbox" name="tech" value="typeScript" />
-              TypeScript</label
-            >
+            <label>
+              <input type="checkbox" id="tech1" name="tech" value="nodeJS" />
+              Node JS
+            </label>
+            <label>
+              <input type="checkbox" id="tech2" name="tech" value="nextJS" />
+              Next JS
+            </label>
+            <label>
+              <input type="checkbox" id="tech3" name="tech" value="reactJS" />
+              React JS
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                id="tech4"
+                name="tech"
+                value="typeScript"
+              />
+              TypeScript
+            </label>
           </div>
 
           <label for="imageUpload">Upload Image</label>
@@ -82,94 +87,129 @@
         </form>
       </div>
     </div>
+
+    <!-- Bagian preview -->
     <div class="preview">
       <h2>MY PROJECT</h2>
       <div class="listProject">
         <div class="card">
           <img src="assets/Johan.jpeg" alt="Project Image" class="card-image" />
-
           <div class="card-content">
-            <h3 class="card-title">My Project Title</h3>
-            <p class="card-time">Jan 2025 - Mar 2025</p>
-
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et quam in nulla egestas placerat. Mauris gravida tincidunt risus,
-              ut tristique nunc posuere in. Donec eget nisl feugiat...
-            </p>
+            <div class="card-top">
+              <h3 class="card-title">My Project Title</h3>
+              <p class="card-time">Jan 2025 - Mar 2025</p>
+              <p class="card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Expedita possimus repellat ea! Numquam laboriosam iste esse
+                autem fuga tempore molestias quaerat, molestiae sit. Earum
+                veritatis sint blanditiis perspiciatis placeat cum perferendis,
+                sed dicta sequi provident, sapiente beatae error eos temporibus
+                quod? Neque doloremque expedita recusandae explicabo suscipit
+                saepe laboriosam repudiandae?
+              </p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-tech">
+                <img src="assets/icon/node-js.png" alt="Node JS" />
+                <img src="assets/icon/reactJs.png" alt="React JS" />
+              </div>
+              <div class="card-actions">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card">
           <img src="assets/Johan.jpeg" alt="Project Image" class="card-image" />
-
           <div class="card-content">
-            <h3 class="card-title">My Project Title</h3>
-            <p class="card-time">Jan 2025 - Mar 2025</p>
-
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et quam in nulla egestas placerat. Mauris gravida tincidunt risus,
-              ut tristique nunc posuere in. Donec eget nisl feugiat...
-            </p>
+            <div class="card-top">
+              <h3 class="card-title">My Project Title</h3>
+              <p class="card-time">Jan 2025 - Mar 2025</p>
+              <p class="card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Expedita possimus repellat ea! Numquam laboriosam iste esse
+                autem fuga tempore molestias quaerat, molestiae sit. Earum
+                veritatis sint blanditiis perspiciatis placeat cum perferendis,
+                sed dicta sequi provident, sapiente beatae error eos temporibus
+                quod? Neque doloremque expedita recusandae explicabo suscipit
+                saepe laboriosam repudiandae?
+              </p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-tech">
+                <img src="assets/icon/node-js.png" alt="Node JS" />
+                <img src="assets/icon/reactJs.png" alt="React JS" />
+              </div>
+              <div class="card-actions">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card">
           <img src="assets/Johan.jpeg" alt="Project Image" class="card-image" />
-
           <div class="card-content">
-            <h3 class="card-title">My Project Title</h3>
-            <p class="card-time">Jan 2025 - Mar 2025</p>
-
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et quam in nulla egestas placerat. Mauris gravida tincidunt risus,
-              ut tristique nunc posuere in. Donec eget nisl feugiat...
-            </p>
+            <div class="card-top">
+              <h3 class="card-title">My Project Title</h3>
+              <p class="card-time">Jan 2025 - Mar 2025</p>
+              <p class="card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Expedita possimus repellat ea! Numquam laboriosam iste esse
+                autem fuga tempore molestias quaerat, molestiae sit. Earum
+                veritatis sint blanditiis perspiciatis placeat cum perferendis,
+                sed dicta sequi provident, sapiente beatae error eos temporibus
+                quod? Neque doloremque expedita recusandae explicabo suscipit
+                saepe laboriosam repudiandae?
+              </p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-tech">
+                <img src="assets/icon/node-js.png" alt="Node JS" />
+                <img src="assets/icon/reactJs.png" alt="React JS" />
+              </div>
+              <div class="card-actions">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card">
           <img src="assets/Johan.jpeg" alt="Project Image" class="card-image" />
-
           <div class="card-content">
-            <h3 class="card-title">My Project Title</h3>
-            <p class="card-time">Jan 2025 - Mar 2025</p>
-
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et quam in nulla egestas placerat. Mauris gravida tincidunt risus,
-              ut tristique nunc posuere in. Donec eget nisl feugiat...
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="assets/Johan.jpeg" alt="Project Image" class="card-image" />
-
-          <div class="card-content">
-            <h3 class="card-title">My Project Title</h3>
-            <p class="card-time">Jan 2025 - Mar 2025</p>
-
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et quam in nulla egestas placerat. Mauris gravida tincidunt risus,
-              ut tristique nunc posuere in. Donec eget nisl feugiat...
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="assets/Johan.jpeg" alt="Project Image" class="card-image" />
-
-          <div class="card-content">
-            <h3 class="card-title">My Project Title</h3>
-            <p class="card-time">Jan 2025 - Mar 2025</p>
-
-            <p class="card-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              et quam in nulla egestas placerat. Mauris gravida tincidunt risus,
-              ut tristique nunc posuere in. Donec eget nisl feugiat...
-            </p>
+            <div class="card-top">
+              <h3 class="card-title">My Project Title</h3>
+              <p class="card-time">Jan 2025 - Mar 2025</p>
+              <p class="card-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Expedita possimus repellat ea! Numquam laboriosam iste esse
+                autem fuga tempore molestias quaerat, molestiae sit. Earum
+                veritatis sint blanditiis perspiciatis placeat cum perferendis,
+                sed dicta sequi provident, sapiente beatae error eos temporibus
+                quod? Neque doloremque expedita recusandae explicabo suscipit
+                saepe laboriosam repudiandae?
+              </p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-tech">
+                <img src="assets/icon/node-js.png" alt="Node JS" />
+                <img src="assets/icon/reactJs.png" alt="React JS" />
+              </div>
+              <div class="card-actions">
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- <script src="src/index.js"></script> -->
+    <script src="src/index.js"></script>
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
